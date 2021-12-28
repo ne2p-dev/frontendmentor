@@ -1,0 +1,140 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Setup */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+p {
+    font-size: 18px;
+}
+li, li:before {
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 1440px;
+    min-width: 375px;
+    height: 720px;
+    background-color: hsl(217, 54%, 11%);
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.cardContainer {
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+/* Card Content */ 
+.product {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+.hoverProduct {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%, .4);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    padding: 1rem 0 1rem 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+}
+.description {
+    width: 300px;
+    padding: 0 0 .5rem 0;
+    color: hsl(215, 51%, 70%);
+}
+.data {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: solid .1px hsl(215, 32%, 27%);
+}
+.price {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+.price:before {
+    content: url('images/icon-ethereum.svg');
+    padding-right: 5px;
+}
+.time {
+    color: hsl(215, 51%, 70%);
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+.time:before {
+    content: url('images/icon-clock.svg');
+    padding-right: 5px;
+}
+.credit {
+    color: hsl(215, 51%, 70%);
+    padding: 1rem 0;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+.credit img {
+    border-radius: 50%;
+    outline: solid 1px hsl(0, 0%, 100%);
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Hover */
+.title a:hover,.credit a:hover {
+    transition: .5s;
+    color: hsl(178, 100%, 50%);
+}
+.hoverProduct:hover {
+    opacity: 1;
+    transition: .5s;
+}
