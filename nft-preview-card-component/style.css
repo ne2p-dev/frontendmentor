@@ -122,6 +122,9 @@ main {
     display: flex;
     align-items: center;
 }
+.credit a {
+    padding: 0 .3rem;
+}
 .credit img {
     border-radius: 50%;
     outline: solid 1px hsl(0, 0%, 100%);
